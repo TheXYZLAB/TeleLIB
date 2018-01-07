@@ -23,7 +23,6 @@ client.on('connect',function(){
 })
 client.on('message',function(topic,msg){
 	let tmp = JSON.parse(msg)
-	console.log(tmp)
     document.getElementById('lib-population').innerHTML = tmp['last_value']+'/'+MAX_POPULATION
     document.getElementById('lib-time').innerHTML = (new Date(tmp['updated_at'])).toLocaleString()
     client.end()
