@@ -1,8 +1,6 @@
-var MAX_POPULATION = 90
+var MAX_POPULATION = 200
 var AIO_KEY = '75b6e2aa68bc48d9a65882c2c21b6a62'
 
-/*
-Retain set as True
 var ADAFRUIT_API = 'https://io.adafruit.com/api/v2/WilliamMTK/feeds/lib-population/data?limit=1&include=value,created_at'
 // Get last data through HTTP
 var xhttp = new XMLHttpRequest();
@@ -16,7 +14,7 @@ xhttp.onreadystatechange = function() {
 xhttp.open('GET',ADAFRUIT_API,false)
 xhttp.setRequestHeader('X-AIO-Key',AIO_KEY)
 xhttp.send()
-*/
+
 
 // Set up MQTT connection
 var client = mqtt.connect('mqtts://io.adafruit.com',{username:'WilliamMTK', password:AIO_KEY})
